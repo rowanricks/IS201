@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Grayscale - Start Bootstrap Theme</title>
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+          <!-- Load Tableau Embedding API v3 -->
+  <script type="module"
+    src="https://public.tableau.com/javascripts/api/tableau.embedding.3.latest.min.js">
+  </script>
+
+  <style>
+    /* Make the embedded viz responsive */
+    #tableauContainer {
+      width: 100%;
+      height: 900px; /* <<< Increase this to make the graph taller */
+      margin: 0 auto;
+      border: 1px solid #ddd; /* optional, just to show boundaries */
+    }
+
+    tableau-viz {
+      width: 100%;
+      height: 100%;
+      display: block;
+    }
+  </style>
+    </head>
+
+<body id="page-top">
+    <!-- Navigation-->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+        <div class="container px-4 px-lg-5">
+
+            <!-- Clickable text that goes to top -->
+            <a class="navbar-brand" href="#page-top">Rowan Ricks</a>
+
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
+                aria-label="Toggle navigation">
+                Menu
+                <i class="fas fa-bars"></i>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#resume">Resume</a></li>
+                </ul>
+            </div>
+
+        </div>
+    </nav>
+
+        <!-- Masthead-->
+        <header class="masthead">
+            <div class="container px-4 px-lg-5 d-flex h-100 align-items-center justify-content-center">
+                <div class="d-flex justify-content-center">
+                    <div class="text-center">
+                        <h1 class="mx-auto my-0 text-uppercase">Rowan Ricks</h1>
+                        <h2 class="text-white-50 mx-auto mt-2 mb-5"></h2>
+                        <a class="btn btn-primary" href="#about">Learn More About Me</a>
+                    </div>
+                </div>
+            </div>
+        </header>
+    <!-- About-->
+    <section class="about-section text-center" id="about">
+        <div class="container px-4 px-lg-5">
+            <div class="row gx-4 gx-lg-5 justify-content-center">
+                <div class="col-lg-8">
+                    <h2 class="text-white mb-4">Vision and Goal</h2>
+                    <p class="text-white-50">
+                        "To Help Others Experience all the Life Has to Offer!"
+                    </p>
+                </div>
+            </div>
+            <img src="assets/img/IMG_4166.JPG" alt="iPad" height="400"/>
+        </div>
+    </section>
+
+
+<!-- Projects-->
+<section class="projects-section bg-light" id="projects">
+  <div class="container px-4 px-lg-5">
+    <!-- Featured Project Row-->
+    <div class="row gx-0 mb-4 mb-lg-5 align-items-center">
+      <div class="col-xl-8 col-lg-7">
+        <!-- If you also want an image here, use the same class -->
+        <img src="https://byucougars.com/imgproxy/kOlZonKKdraCT3wNdrt-_cjMkm85Js8O7eFOV2GKI9Q/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2J5dWNvdWdhcnMtcHJvZC8yMDIzLzA5LzMwL1hEbzVudHFMRk5VVDJyd3gwb0dKdTJBSG96Q0hYb2ZLbkhmcUcxbzIuanBn.jpg" width="520px">
+      </div>
+      <div class="col-xl-4 col-lg-5">
+        <div class="featured-text text-center text-lg-left">
+          <h4>Brigham Young University</h4>
+          <p class="text-black-50 mb-0">BYU's is ranked among the top in the nation. Not only build on a dual heritage of academic excellence and spiritual growth, but it also offers a unique environment that fosters personal development and lifelong learning. Surrounded by picturesque mountains and </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Project One Row-->
+    <div class="row gx-0 mb-5 mb-lg-0 justify-content-center">
+      <div class="col-lg-6">
+        <!-- Insert Image 1 here -->
+        <img src="https://www.fineartstorehouse.com/p/629/ski-instructors-practicing-jump-technique-39385583.jpg.webp" alt="Project 1" class="img-fluid">
+      </div>
+      <div class="col-lg-6">
+        <div class="bg-black text-center h-100 project">
+          <div class="d-flex h-100">
+            <div class="project-text w-100 my-auto text-center text-lg-left">
+              <h4 class="text-white">Bogus Basin Skiing</h4>
+              <p class="mb-0 text-white-50">Instructing at Bogus Basin Ski Resort I helped students improve their skiing techniques and build confidence on the slopes.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Project Two Row-->
+    <div class="row gx-0 justify-content-center">
+      <div class="col-lg-6">
+        <!-- Insert Image 2 here -->
+         <img src="https://robertson.ms/wp-content/uploads/2020/01/Stanton-on-the-Bull-bw.jpg" alt="Project 2" class="img-fluid">
+        </div>
+      <div class="col-lg-6 order-lg-first">
+        <div class="bg-black text-center h-100 project">
+          <div class="d-flex h-100">
+            <div class="project-text w-100 my-auto text-center text-lg-right">
+              <h4 class="text-white">Salmon River Rafting</h4>
+              <p class="mb-0 text-white-50">Guiding rafting trips on the Salmon River, I ensured the safety and enjoyment of all participants while sharing my passion for the outdoors.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+    <!-- NEW: Resume Section -->
+    <section class="about-section text-center" id="resume">
+        <div class="container px-4 px-lg-5">
+            <div class="row gx-4 gx-lg-5 justify-content-center">
+                <div class="col-lg-10">
+                    <h2 class="text-white mb-4">Resume</h2>
+
+                    <!-- Contact -->
+                    <div class="card bg-transparent border-0 mb-4">
+                        <div class="card-body text-white-50">
+                            <p class="mb-1"><strong class="text-white">Rowan Ricks</strong></p>
+                            <p class="mb-1">Boise, Idaho (born & raised) | Provo, Utah</p>
+                            <p class="mb-1">mailto:rowanhr@byu.edurowanhr@byu.edu</a> | tel:+12088414012(208) 841-4012</a></p>
+                            <p class="mb-0">https://linkedin.com/in/rowanrickslinkedin.com/in/rowanricks</a></p>
+                        </div>
+                    </div>
+
+                    <!-- Education -->
+                    <div class="text-start text-white-50 mb-4">
+                        <h4 class="text-white">Education</h4>
+                        <hr class="border-light">
+                        <div class="d-flex justify-content-between">
+                            <div>
+                                <strong class="text-white">Brigham Young University</strong> — Bachelor of Science in Construction Management
+                                <div>Provo, Utah</div>
+                            </div>
+                            <div>Expected Graduation: April 2028</div>
+                        </div>
+                        <ul class="mt-2">
+                            <li>Relevant coursework: Project Management, Building Systems, Construction Safety</li>
+                            <li>Passionate about health, fitness, and performance</li>
+                        </ul>
+                    </div>
+
+                    <!-- Experience -->
+                    <div class="text-start text-white-50 mb-4">
+                        <h4 class="text-white">Experience</h4>
+                        <hr class="border-light">
+
+                        <div class="mb-3">
+                            <div class="d-flex justify-content-between">
+                                <strong class="text-white">White Water Raft Guide</strong>
+                                <span>Boise, Idaho | Summers</span>
+                            </div>
+                            <ul class="mt-2">
+                                <li>Guided groups safely through variable river conditions; managed risk and emergency protocols</li>
+                                <li>Delivered outstanding customer experiences; built trust and teamwork on the water</li>
+                                <li>Strengthened leadership and communication in high-pressure environments</li>
+                            </ul>
+                        </div>
+
+                        <div class="mb-3">
+                            <div class="d-flex justify-content-between">
+                                <strong class="text-white">Lifeguard — Boise Public Pools</strong>
+                                <span>Boise, Idaho | 1 year</span>
+                            </div>
+                            <ul class="mt-2">
+                                <li>Monitored swimmer safety and enforced regulations across busy public facilities</li>
+                                <li>Performed rescues and administered first aid as needed</li>
+                                <li>Maintained clean, safe aquatic environments for hundreds of daily visitors</li>
+                            </ul>
+                        </div>
+
+                        <div class="mb-3">
+                            <div class="d-flex justify-content-between">
+                                <strong class="text-white">Domino’s — Delivery Driver</strong>
+                                <span>Boise, Idaho | 2 years</span>
+                            </div>
+                            <ul class="mt-2">
+                                <li>Delivered orders efficiently with excellent customer service and professionalism</li>
+                                <li>Optimized routes to meet time-sensitive delivery windows</li>
+                                <li>Assisted with in-store operations during peak hours</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Skills & Interests -->
+                    <div class="text-start text-white-50 mb-4">
+                        <h4 class="text-white">Skills and Interests</h4>
+                        <hr class="border-light">
+                        <p><strong class="text-white">Skills:</strong> Leadership, Risk Management, Customer Service, Outdoor Safety, Time Management, Basic First Aid, Microsoft Office, Google Docs</p>
+                        <p><strong class="text-white">Hobbies:</strong> Hiking, Running, Surfing, Kite Surfing, Parachuting, Snowmobiling, Skiing, Snowboarding; Cooking healthy recipes; Working out & health-oriented lifestyle</p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Tableau Dashboard-->
+</div>
+
+ <div style="text-align: center; margin-top: 40px;">
+ <h2>Where is Happiness Found?</h2>
+  <div id="tableauContainer">
+    <tableau-viz id="tableauViz"
+      src="https://public.tableau.com/views/HappinessDatasetProject/Dashboard" 
+      width="100%" height="100%"
+      toolbar="bottom" hide-tabs>
+    </tableau-viz>
+  </div>
+
+  <div style="text-align: center; margin-top: 40px;">
+
+  <h2>Happiness is a Result of Adventure!</h2>
+
+  <button onclick="generateAdventure()" 
+          style="padding: 12px 24px; font-size: 20px; cursor: pointer;">
+    Your Next Adventure
+  </button>
+
+  <p id="adventureOutput"
+     style="font-size: 28px; margin-top: 25px; font-weight: bold; color: #1a4;">
+     <!-- Random adventure appears here -->
+  </p>
+
+</div>
+
+<script>
+  // List of adrenaline activities
+  const adventures = [
+    "Skydiving",
+    "Ice Climbing",
+    "Rock Climbing",
+    "Driving a Race Car",
+    "Hot Air Balloon Ride",
+    "White Water Rafting",
+    "Bungee Jumping",
+    "Wingsuit Flying",
+    "Scuba Diving",
+    "Ziplining",
+    "Paragliding",
+    "Mountain Biking",
+    "Surfing a Big Wave",
+    "Snowboarding",
+    "Skiing",
+    "Cave Diving",
+    "Kite Surfing",
+    "Parkour",
+    "Jet Skiing",
+    "Parasailing"
+  ];
+
+  // Function to pick a random activity
+  function generateAdventure() {
+    const randomIndex = Math.floor(Math.random() * adventures.length);
+    document.getElementById("adventureOutput").textContent = adventures[randomIndex];
+  }
+</script>
+
+
+  <style>
+    .video-container {
+      position: relative;
+      width: 100%;
+      /* 56.25% = 9 / 16 → preserves 16:9 aspect ratio */
+      padding-bottom: 56.25%;
+      height: 0;
+    }
+
+    .video-container iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+  </style>
+<div class="video-container">
+    <iframe width="560" height="315"
+src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+frameborder="0"
+allowfullscreen></iframe>
+
+</div>
+
+
+        <!-- Contact-->
+        <section class="contact-section bg-black">
+            <div class="container px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5">
+                    <div class="col-md-4 mb-3 mb-md-0">
+                        <div class="card py-4 h-100">
+                            <div class="card-body text-center">
+                                <i class="fas fa-map-marked-alt text-primary mb-2"></i>
+                                <h4 class="text-uppercase m-0">Address</h4>
+                                <hr class="my-4 mx-auto" />
+                                <div class="small text-black-50">14 Heritage Drive, Provo UT</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-3 mb-md-0">
+                        <div class="card py-4 h-100">
+                            <div class="card-body text-center">
+                                <i class="fas fa-envelope text-primary mb-2"></i>
+                                <h4 class="text-uppercase m-0">Email</h4>
+                                <hr class="my-4 mx-auto" />
+                                <div class="small text-black-50"><a href="#!">rowanhr@byu.edu</a></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-3 mb-md-0">
+                        <div class="card py-4 h-100">
+                            <div class="card-body text-center">
+                                <i class="fas fa-mobile-alt text-primary mb-2"></i>
+                                <h4 class="text-uppercase m-0">Phone</h4>
+                                <hr class="my-4 mx-auto" />
+                                <div class="small text-black-50">+1 (208) 841 4012</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="social d-flex justify-content-center">
+                    <a class="mx-2" href="#!"><i class="fab fa-twitter"></i></a>
+                    <a class="mx-2" href="#!"><i class="fab fa-facebook-f"></i></a>
+                    <a class="mx-2" href="#!"><i class="fab fa-github"></i></a>
+                </div>
+            </div>
+        </section>
+        <!-- Footer-->
+        <footer class="footer bg-black small text-center text-white-50"><div class="container px-4 px-lg-5">Copyright &copy; rowanhr 2025</div></footer>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+        <!-- * *                               SB Forms JS                               * *-->
+        <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
+        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+        <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+    </body>
+</html>
