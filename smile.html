@@ -5,54 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ooh What a Smile Can Do</title>
 
+    <!-- Link to external CSS -->
+    <link rel="stylesheet" href="smile.css">
+
     <!-- Load Tableau API -->
     <script type="module" src="https://public.tableau.com/javascripts/api/tableau.embedding.3.latest.min.js"></script>
-
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            text-align: center;
-            background: #f6f6ff;
-        }
-
-        header {
-            background: #ffe066;
-            padding: 30px;
-            font-size: 36px;
-            font-weight: bold;
-        }
-
-        a.home-link {
-            display: inline-block;
-            margin-top: 15px;
-            font-size: 20px;
-            color: #333;
-            text-decoration: none;
-            font-weight: bold;
-        }
-
-        a.home-link:hover {
-            text-decoration: underline;
-        }
-
-        .section {
-            margin: 60px auto;
-            max-width: 900px;
-            padding: 20px;
-        }
-
-        .tableau-container {
-            width: 100%;
-            height: 900px;
-            margin: 20px auto;
-        }
-
-        .video-container {
-            margin-top: 30px;
-        }
-    </style>
 </head>
 
 <body>
@@ -63,19 +20,19 @@
     <!-- Link back to your main page -->
     <a href="index.html" class="home-link">← Back to Home</a>
 
-    <!-- Section 1: Intro -->
+    <!-- Section 1 -->
     <div class="section">
         <h2>How Smiling Shapes Happiness</h2>
-        <p style="font-size: 20px; line-height: 1.6;">
-            A smile can lift your mood, brighten your day, and even spark joy in those around you.  
+        <p>
+            A smile can lift your mood, brighten your day, and even spark joy in those around you.
             Explore the science behind smiling and discover how something so simple can make such a big impact.
         </p>
     </div>
 
-    <!-- Section 2: Tableau Embed -->
+    <!-- Section 2: Tableau -->
     <div class="section">
         <h2>Smiling, Positivity & Happiness</h2>
-        <p>This interactive Tableau visualization shows how emotional well-being and happiness levels relate to positive facial expressions.</p>
+        <p>This interactive Tableau visualization explores the relationship between emotional well-being and positive expression.</p>
 
         <div class="tableau-container">
             <tableau-viz
@@ -87,10 +44,10 @@
         </div>
     </div>
 
-    <!-- Section 3: YouTube Video -->
+    <!-- Section 3: Video -->
     <div class="section video-container">
         <h2>The Power of a Smile</h2>
-        <p>Watch this video to learn how smiling affects your brain, mood, and relationships.</p>
+        <p>Watch how smiling influences your brain, mood, and relationships.</p>
 
         <iframe
             width="800"
@@ -103,5 +60,40 @@
         </iframe>
     </div>
 
+    <!-- Section 4: Generator -->
+    <div class="section">
+        <h2>Where Can You Let Your Smile Shine Today?</h2>
+
+        <button class="button" onclick="generateSmileSpot()">Where Can You Let Your Smile Shine Today?</button>
+
+        <p id="smileOutput"></p>
+    </div>
+
+    <!-- SMILE GENERATOR JS -->
+    <script>
+      const smileSpots = [
+        "At School", "At University", "At Work", "In the Office", "At Home",
+        "At Dinner", "At a Restaurant", "With Friends", "With Family",
+        "With a Stranger", "At the Gym", "At the Grocery Store", "On a Walk",
+        "At a Coffee Shop", "In Class", "On Public Transport", "At a Party",
+        "In a New City", "Helping Someone", "Volunteering"
+      ];
+
+      function generateSmileSpot() {
+        const randomIndex = Math.floor(Math.random() * smileSpots.length);
+        document.getElementById("smileOutput").textContent = smileSpots[randomIndex];
+      }
+    </script>
+    
+    <br>
+    <br>
+    <br>
+    <br>
+    <br><br>
+        <br>
+    <br>
+    <br>
+    <br>
+    <br><br>
 </body>
 </html>
