@@ -1,12 +1,18 @@
 /* ------------------------
    GLOBAL PAGE THEME
 -------------------------*/
+.section {
+    text-align: center;
+}
+
 body {
     font-family: "Segoe UI", Arial, sans-serif;
     margin: 0;
     padding: 0;
     text-align: center;
-    background: #f5f5f5;
+    background: url("https://images.unsplash.com/photo-1508264165352-258a6bde0f5b?auto=format&fit=crop&w=1920&q=60")
+                no-repeat center center fixed;
+    background-size: cover;
     color: #222;
 }
 
@@ -14,9 +20,10 @@ body {
    HEADER
 -------------------------*/
 header {
-    background: #111;
+    background: #686565;
     padding: 35px;
     font-size: 42px;
+    font: "Segoe UI", Arial, sans-serif;
     font-weight: bold;
     color: #f5f5f5;
     letter-spacing: 1px;
