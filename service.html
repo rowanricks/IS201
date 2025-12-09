@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Service Generator</title>
+
+<style>
+    body {
+        font-family: "Segoe UI", Arial, sans-serif;
+        background: linear-gradient(135deg, #444, #222);
+        min-height: 100vh;
+        margin: 0;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        padding-top: 40px;
+    }
+
+    h1 {
+        font-size: 42px;
+        margin-bottom: 10px;
+        letter-spacing: 1px;
+    }
+
+    p.subtitle {
+        font-size: 18px;
+        margin-bottom: 30px;
+        opacity: 0.8;
+    }
+
+    .generator-card {
+        background: rgba(255, 255, 255, 0.1);
+        padding: 30px;
+        border-radius: 16px;
+        max-width: 500px;
+        text-align: center;
+        backdrop-filter: blur(6px);
+        box-shadow: 0 0 20px rgba(0,0,0,0.4);
+        animation: fadeIn 0.7s ease-out;
+    }
+
+    @keyframes fadeIn {
+        from { opacity: 0; transform: translateY(20px); }
+        to { opacity: 1; transform: translateY(0); }
+    }
+
+    button {
+        background: #ffe066;
+        border: none;
+        padding: 14px 30px;
+        font-size: 20px;
+        font-weight: bold;
+        cursor: pointer;
+        border-radius: 10px;
+        margin-top: 15px;
+        transition: 0.2s;
+    }
+
+    button:hover {
+        background: #ffdf47;
+        transform: scale(1.05);
+    }
+
+    button:active {
+        animation: shake 0.2s;
+    }
+
+    @keyframes shake {
+        0% { transform: translateX(0); }
+        25% { transform: translateX(-4px); }
+        50% { transform: translateX(4px); }
+        75% { transform: translateX(-4px); }
+        100% { transform: translateX(0); }
+    }
+
+    #output {
+        font-size: 26px;
+        margin-top: 25px;
+        font-weight: bold;
+        min-height: 60px;
+    }
+
+    #streak {
+        margin-top: 12px;
+        font-size: 18px;
+        opacity: 0.9;
+    }
+
+    a.back {
+        color: #ffe066;
+        text-decoration: none;
+        margin-top: 30px;
+        font-size: 18px;
+    }
+</style>
+</head>
+
+<body>
+
+<h1>Service Generator</h1>
+<p class="subtitle">One small action can change someone’s entire day.</p>
+
+<div class="generator-card">
+    <div id="output">Click the button to get started.</div>
+
+    <button onclick="generateService()">Generate Service Idea</button>
+
+    <div id="streak">Service Streak: 0</div>
+</div>
+
+<a href="index.html" class="back">← Back to Home</a>
+
+<script>
+    const serviceIdeas = [
+        "Send a kind text to someone you appreciate.",
+        "Hold the door open for a stranger.",
+        "Pick up three pieces of trash outdoors.",
+        "Compliment someone sincerely.",
+        "Let someone go ahead of you in line.",
+        "Write a thank-you note to a teacher or mentor.",
+        "Donate a piece of clothing you no longer wear.",
+        "Help someone carry groceries.",
+        "Check in on a friend you haven't talked to in a while.",
+        "Pay for the person behind you (coffee, etc.).",
+        "Offer to help a classmate with homework.",
+        "Leave a positive note for someone to find.",
+        "Give someone your full attention while listening.",
+        "Do a chore at home without being asked.",
+        "Leave a positive review for a local business."
+    ];
+
+    let streak = 0;
+
+    function generateService() {
+        const random = Math.floor(Math.random() * serviceIdeas.length);
+        document.getElementById("output").textContent = serviceIdeas[random];
+
+        streak++;
+        document.getElementById("streak").textContent = "Service Streak: " + streak;
+    }
+</script>
+
+</body>
+</html>
